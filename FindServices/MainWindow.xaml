@@ -1,0 +1,29 @@
+﻿<Window x:Class="FindServices.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Services" Height="350" Width="522" ResizeMode="NoResize" FontFamily="Calibri">
+    <Grid>
+        <StackPanel
+            Margin="10, 10, 0, 0">
+            <ComboBox 
+                Name="cmbItemService" 
+                Width="200" 
+                Height="25"
+                SelectionChanged="cmbItemService_SelectionChanged"
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Left"
+                Margin="10,10,0,0">
+                <ComboBoxItem Content="Music"></ComboBoxItem>
+                <ComboBoxItem Content="Print"></ComboBoxItem>
+                <ComboBoxItem Content="Documents"></ComboBoxItem>
+                <ComboBoxItem Content="Images"></ComboBoxItem>
+            </ComboBox>
+            <ListBox 
+                HorizontalAlignment="Left"
+            	x:Name="ltbServices"
+            	Height="200" 
+            	Width="200" 
+            	Margin="10,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
